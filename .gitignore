@@ -1,0 +1,16 @@
+dist
+node_modules
+*.swp
+
+# Environment variables
+.env
+.env.local
+.env.production
+
+# Extension packages
+*.zip
+*.crx
+*.pem
+
+#Local data
+evaluation

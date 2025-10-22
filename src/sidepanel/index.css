@@ -1,0 +1,105 @@
+@import 'tailwindcss';
+@plugin "@tailwindcss/typography";
+/* Enable dark mode based on system preference */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+  }
+}
+
+/* Custom Theme Configuration */
+@theme {
+  /* Typography - Professional Serif Font for Headers */
+  --font-family-serif: 'Playfair Display', 'Georgia', 'Times New Roman', serif;
+  --font-family-mono: 'JetBrains Mono', 'Fira Code', 'Consolas', 'Monaco', monospace;
+
+  /* Base Background - Light Mode */
+  --color-bg-base: #faf9f5;
+  --color-bg-base-dark: #1a1816;
+
+  /* Primary Color Palette - Warm Terracotta/Clay tone */
+  --color-primary-50: #fef6f3;
+  --color-primary-100: #fde9e1;
+  --color-primary-200: #fbd2c3;
+  --color-primary-300: #f7b39a;
+  --color-primary-400: #f28b6f;
+  --color-primary-500: #e97451;
+  --color-primary-600: #d65638;
+  --color-primary-700: #b4402d;
+  --color-primary-800: #94362a;
+  --color-primary-900: #7a3127;
+
+  /* Primary Color - Dark Mode Variants (brighter, more vibrant for dark backgrounds) */
+  --color-primary-50-dark: #7a3127;
+  --color-primary-100-dark: #94362a;
+  --color-primary-200-dark: #b4402d;
+  --color-primary-300-dark: #d65638;
+  --color-primary-400-dark: #e97451;
+  --color-primary-500-dark: #f28b6f;
+  --color-primary-600-dark: #f7b39a;
+  --color-primary-700-dark: #fbd2c3;
+  --color-primary-800-dark: #fde9e1;
+  --color-primary-900-dark: #fef6f3;
+
+  /* Neutral Grays - Light Mode */
+  --color-gray-50: #fafaf9;
+  --color-gray-100: #f5f5f4;
+  --color-gray-200: #e7e5e4;
+  --color-gray-300: #d6d3d1;
+  --color-gray-400: #a8a29e;
+  --color-gray-500: #78716c;
+  --color-gray-600: #57534e;
+  --color-gray-700: #44403c;
+  --color-gray-800: #292524;
+  --color-gray-900: #1c1917;
+
+  /* Neutral Grays - Dark Mode (inverted) */
+  --color-gray-50-dark: #1c1917;
+  --color-gray-100-dark: #292524;
+  --color-gray-200-dark: #44403c;
+  --color-gray-300-dark: #57534e;
+  --color-gray-400-dark: #78716c;
+  --color-gray-500-dark: #a8a29e;
+  --color-gray-600-dark: #d6d3d1;
+  --color-gray-700-dark: #e7e5e4;
+  --color-gray-800-dark: #f5f5f4;
+  --color-gray-900-dark: #fafaf9;
+
+  /* Accent Colors - Work well in both modes */
+  --color-success: #22c55e;
+  --color-error: #ef4444;
+  --color-warning: #f59e0b;
+  --color-info: #3b82f6;
+}
+
+/* Global Base Styles */
+@layer base {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family:
+      -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans',
+      'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: var(--color-bg-base);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: var(--color-bg-base-dark);
+    }
+  }
+
+  input,
+  button,
+  textarea,
+  select {
+    font-family: inherit;
+    font-size: inherit;
+  }
+}

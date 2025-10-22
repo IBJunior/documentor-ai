@@ -1,0 +1,116 @@
+/* DocuMentor AI - Text Selection Menu Styles */
+
+.documentor-selection-menu {
+  position: absolute;
+  z-index: 2147483647; /* Maximum z-index to appear above everything */
+  display: none;
+  flex-direction: column;
+  gap: 8px;
+  background: #e97451; /* primary-500 terracotta */
+  padding: 12px;
+  border-radius: 12px;
+  box-shadow:
+    0 8px 24px rgba(233, 116, 81, 0.3),
+    0 2px 8px rgba(0, 0, 0, 0.1);
+  font-family:
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  min-width: 220px;
+  animation: fadeInScale 0.2s ease-out;
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.documentor-menu-header {
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  padding: 4px 8px;
+  margin-bottom: 4px;
+  letter-spacing: 0.5px;
+}
+
+.documentor-menu-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  background: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.documentor-menu-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  background: #d65638; /* primary-600 darker terracotta */
+  color: white;
+}
+
+.documentor-menu-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-icon {
+  width: 18px;
+  height: 18px;
+  line-height: 1;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-icon svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.btn-text {
+  flex: 1;
+  text-align: left;
+  white-space: nowrap;
+}
+
+/* Prevent menu from being selected */
+.documentor-selection-menu,
+.documentor-selection-menu * {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .documentor-selection-menu {
+    min-width: 180px;
+  }
+
+  .documentor-menu-btn {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+
+  .btn-icon {
+    width: 16px;
+    height: 16px;
+  }
+}
