@@ -1,6 +1,6 @@
 import { sidepanelLogger } from '../../utils/logger';
 
-export const MAX_QUOTA_THRESHOLD = 0.7; // 70% of the input quota
+export const MAX_QUOTA_THRESHOLD = 0.8; // 80% of the input quota
 export const MIN_SUPPORTED_LENGTH = 4000; // Minimum content length to validate, we assume shorter content is always valid
 /**
  * Generic content validation for AI APIs that extend AISession

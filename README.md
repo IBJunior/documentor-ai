@@ -111,8 +111,7 @@ Transform any documentation into a clean, downloadable cheat sheet:
 Select any text on a webpage and get instant, personalized explanations:
 
 - **Explain like I'm 5** - Complex concepts in simple terms
-- **More examples** - Additional code examples and use cases
-- **Rewrite** - Alternative explanations if you didn't get it the first time
+- **Explain** - Explain a given concept based on the documentation
 - **Follow-up questions** - Ask anything about the selected text
 
 **Use Case:** You're reading about "closures" in JavaScript. Select the text, ask for an ELI5 explanation, and the AI breaks it down using your persona's context.
