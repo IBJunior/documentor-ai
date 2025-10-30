@@ -321,9 +321,3 @@ npm run build
 
 # Load dist/ folder as unpacked extension
 ```
-
----
-
-## 📄 License
-
-MIT License
