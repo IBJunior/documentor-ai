@@ -5,13 +5,13 @@
 ![Chrome Extension](https://img.shields.io/badge/Chrome-Extension-4285F4?logo=googlechrome&logoColor=white)
 ![Chrome Built-in AI](https://img.shields.io/badge/Chrome%20Built--in%20AI-Powered-34A853)
 ![Chrome Version](https://img.shields.io/badge/Chrome-138%2B-blue)
-![License](https://img.shields.io/badge/License-MIT-green)
+![License](https://img.shields.io/badge/License-Apache%202.0-blue)
 
 ---
 
 ## 🎥 Demo Video
 
-[**Watch the Demo**](#) _(Link to demo video)_
+[**Watch the Demo**](https://www.youtube.com/watch?v=U3sNeBFJreI) _(Link to demo video)_
 
 See DocuMentor AI in action - from personalized page analysis to AI-powered explanations!
 
